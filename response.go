@@ -16,7 +16,7 @@ type Response struct {
 }
 
 // Get Response Body as simplejson.Json
-func (resp *Response) Json() (*simplejson.Json, error) {
+func (resp *Response) Json() (*simplejson.Json,    error) {
 	b, err := resp.Content()
 	if err != nil {
 		return nil, err
